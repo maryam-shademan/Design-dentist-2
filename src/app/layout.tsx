@@ -20,12 +20,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-lazlo>`}>
         {/* هدر */}
         <header className="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-4 px-8 shadow-lg">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -156,7 +154,7 @@ export default function RootLayout({
         {children}
         <>
           {/* بخش هلال موج‌دار */}
-          <div className="relative h-32 bg-blue-600 overflow-hidden">
+          <div className="relative h-32 bg-blue-600 overflow-hidden mt-5">
             <svg
               viewBox="0 0 1440 320"
               className="absolute -bottom-1 w-full h-32"

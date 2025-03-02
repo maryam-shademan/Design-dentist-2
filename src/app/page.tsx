@@ -1,56 +1,72 @@
 export default function Page() {
   return (
     <>
-      <section className="container mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-        {/* تصویر دکتر */}
-        <div className="flex justify-center">
-          <img
-            src="/img/دکتر گلشاه.png"
-            alt="دکترگلشاه"
-            className="w-3/4 md:w-full max-w-sm rounded-lg shadow-lg"
-          />
-        </div>
-        {/* متن و اطلاعات */}
-        <div className="text-center md:text-right space-y-6">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-            مرکز دندانپزشکی دکتر گلشاه
-          </h1>
-          <div className="w-16 h-1 bg-blue-500 mx-auto md:mx-0" />
-          <p className="text-gray-700 leading-relaxed">
-            مرکز دندانپزشکی زیبایی دکترگلشاه با بکارگیری جدیدترین متدهای طراحی لبخند و با استفاده از بروزترین تکنولوژی و تجهیزات ایمپلنت، کلیه خدمات تخصصی و درمانی دندانپزشکی را ارائه می‌کند.
-          </p>
-          {/* دکمه واتساپ */}
-          <a
-            href="https://wa.me/+989122039774"
-            target="_blank"
-            rel="nofollow"
-            className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
-          >
-            <svg
-              className="w-6 h-6 mr-2"
-              fill="currentColor"
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
+      <section className="container mx-auto mt-10 px-6">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          {/* تصویر دکتر - در موبایل اول نمایش داده می‌شود */}
+          <div className="order-1 md:order-2 flex justify-center ">
+            <img
+              src="/img/دکتر گلشاه.png"
+              alt="دکتر گلشاه"
+              className="w-full max-w-lg rounded-lg"
+            />
+          </div>
+
+          {/* متن و اطلاعات - در موبایل دوم نمایش داده می‌شود */}
+          <div className="order-2 md:order-1 text-center md:text-right ">
+            <h1 className="text-2xl md:text-3xl font-bold text-black mb-5 text-center items-center">
+              مرکز دندانپزشکی دکتر گلشاه
+            </h1>
+            <div className="w-16 h-1 bg-blue-500 mx-auto md:max-w-7xl mb-6" />
+
+            {/* توضیحات بیشتر */}
+            <p className=" leading-relaxed px-4 sm:px-8 font-bold text-black">
+              مرکز دندانپزشکی زیبایی دکتر گلشاه با بکارگیری جدیدترین متدهای طراحی لبخند و با استفاده از بروزترین تکنولوژی و تجهیزات ایمپلنت، کلیه خدمات تخصصی و درمانی دندانپزشکی را ارائه می‌کند.
+            </p>
+
+            {/* متن بیشتر اضافه شده */}
+            <p className=" leading-relaxed px-4 sm:px-8 font-bold text-black">
+              این مرکز با تیمی متخصص و حرفه‌ای در زمینه‌های مختلف دندانپزشکی، خدماتی مانند سفید کردن دندان، درمان ریشه، جراحی دندان، ایمپلنت و ارتودنسی را به مشتریان محترم خود ارائه می‌دهد. همچنین، محیطی آرام و مدرن برای راحتی و آسایش بیماران فراهم کرده‌ایم.
+            </p>
+
+            {/* خط آبی زیر متن */}
+
+
+            {/* دکمه واتساپ */}
+            <a
+              href="https://wa.me/+989122039774"
+              target="_blank"
+              rel="nofollow"
+              className="inline-flex items-center px-6 py-3 mt-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
             >
-              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 438.7c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6z" />
-            </svg>
-            دریافت مشاوره رایگان در واتساپ
-          </a>
+              <svg
+                className="w-6 h-6 mr-2"
+                fill="currentColor"
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 438.7c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6z" />
+              </svg>
+              دریافت مشاوره رایگان در واتساپ
+            </a>
+          </div>
         </div>
       </section>
 
+
+
       <section className="text-center justify-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 my-8">
-          خدمات مرکز دندانپزشکی زیبایی دکتر نوربخش
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 my-8 px-12">
+          خدمات مرکز دندانپزشکی زیبایی
+          دکتر گلشاه
         </h2>
       </section>
 
 
-      <section>
+      <section className="px-20 sm:px-32 md:px-16 lg:px-96">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 md:p-12 lg:p-16">
-
           {/* خدمات لمینت */}
-          <div className="relative px-5 mt-6 pt-16 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 lg:col-span-2 xl:col-span-1 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-47.png"
@@ -58,16 +74,17 @@ export default function Page() {
                 className="w-20 h-20 rounded-full"
               />
             </span>
-            <h2 className="my-1 gradient-red text-base uppercase tracking-wide text-center text-black font-semibold">
-              خدمات لمینت
-            </h2>
-            <p className="py-2 text-center text-sm text-gray-600">
-              لمینت دندان یک روش زیبایی است که با استفاده از پوشش‌های نازک سرامیکی یا کامپوزیتی به دندان‌ها فرم می‌دهد. این روش برای رفع مشکلاتی مانند تغییر رنگ، ترک خوردگی یا ناهماهنگی دندان‌ها استفاده می‌شود.
+
+            <h1 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-10">
+              لمینت
+            </h1>
+            <p className="py-2  text-center text-sm text-black font-bold">
+              لمینت دندان یک روش زیبایی است که با استفاده از پوشش‌های نازک سرامیکی یا کامپوزیتی به دندان‌ها فرم می‌دهد.
             </p>
           </div>
 
           {/* ایمپلنت دندانی */}
-          <div className="relative px-5 mt-6 pt-16 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300  transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-48.png"
@@ -75,38 +92,37 @@ export default function Page() {
                 className="w-20 h-20 rounded-full"
               />
             </span>
-            <h2 className="my-1 gradient-red text-base uppercase tracking-wide text-center text-black font-semibold">
-              ایمپلنت دندانی
-            </h2>
-            <p className="py-2 text-center text-sm text-black">
-              ایمپلنت دندانی یک جایگزین دائمی برای دندان‌های از دست رفته است. در این روش، ریشه دندان با استفاده از یک پیچ تیتانیومی در فک قرار می‌گیرد و تاج دندان به آن متصل می‌شود.
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-10">
+              ایمپلنت دندان
+            </h3>
+            <p className="py-2 text-center text-sm text-black font-bold">
+              ایمپلنت دندانی یک جایگزین دائمی برای دندان‌های از دست رفته است.
             </p>
           </div>
 
           {/* درمان ریشه */}
-          <div className="relative px-5 mt-6 pt-16 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300  transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-46.png"
                 alt="درمان ریشه"
-                className="w-18 h-18 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
             </span>
-            <h2 className="my-1 gradient-red text-base uppercase tracking-wide text-center text-black font-semibold">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-10">
               درمان ریشه
-            </h2>
-            <p className="py-2 text-center text-sm text-gray-600">
-              درمان ریشه یا عصب‌کشی به فرایندی گفته می‌شود که در آن عفونت یا آسیب درون دندان درمان می‌شود. این روش برای دندان‌هایی که به شدت آسیب دیده‌اند یا عفونت کرده‌اند استفاده می‌شود.
+            </h3>
+            <p className="py-2 text-center text-sm text-black font-bold">
+              درمان ریشه برای دندان‌های آسیب دیده یا عفونی ضروری است.
             </p>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="px-20 sm:px-28 md:px-16 lg:px-96">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 md:p-12 lg:pt-1">
-
           {/* خدمات لمینت */}
-          <div className="relative px-5 mt-6 pt-16 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 lg:col-span-2 xl:col-span-1 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-51.png"
@@ -114,16 +130,16 @@ export default function Page() {
                 className="w-20 h-20 rounded-full"
               />
             </span>
-            <h2 className="my-1 gradient-red text-base uppercase tracking-wide text-center text-black font-semibold">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-10">
               خدمات لمینت
-            </h2>
-            <p className="py-2 text-center text-sm text-gray-600">
-              لمینت دندان یک راه حل مناسب برای کسانی است که به دنبال بهبود زیبایی و ظاهر دندان‌های خود هستند. این روش کمترین آسیب را به دندان‌ها وارد می‌کند و در عین حال نتایج بسیار طبیعی و زیبا ایجاد می‌کند.
+            </h3>
+            <p className="py-2 text-center text-sm text-black font-bold">
+              لمینت دندان یک راه حل مناسب برای کسانی است که به دنبال بهبود زیبایی و ظاهر دندان‌های خود هستند.
             </p>
           </div>
 
           {/* ایمپلنت دندانی */}
-          <div className="relative px-5 mt-6 pt-16 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300  transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-66-1.png"
@@ -131,32 +147,34 @@ export default function Page() {
                 className="w-20 h-20 rounded-full"
               />
             </span>
-            <h2 className="my-1 gradient-red text-base uppercase tracking-wide text-center text-black font-semibold">
-              ایمپلنت دندانی
-            </h2>
-            <p className="py-2 text-center text-sm text-black">
-              ایمپلنت‌ها یک راهکار عالی برای بازیابی عملکرد دندان از دست رفته هستند. این روش برای افرادی که به دلیل بیماری‌های لثه یا تصادف دندان‌های خود را از دست داده‌اند مناسب است.
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-10">
+              لمینت سرامیکی
+            </h3>
+            <p className="py-2 text-center text-sm text-black font-bold">
+              ایمپلنت‌ها یک راهکار عالی برای بازیابی عملکرد دندان از دست رفته هستند.
             </p>
           </div>
 
           {/* درمان ریشه */}
-          <div className="relative px-5 mt-6 pt-16 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300  transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-49.png"
                 alt="درمان ریشه"
-                className="w-18 h-18 rounded-full"
+                className="w-20 h-20 rounded-full"
               />
             </span>
-            <h2 className="my-1 gradient-red text-base uppercase tracking-wide text-center text-black font-semibold">
-              درمان ریشه
-            </h2>
-            <p className="py-2 text-center text-sm text-gray-600">
-              درمان ریشه برای دندان‌های آسیب دیده یا عفونی ضروری است. در این فرایند، دندانپزشک عصب و بافت آلوده را پاک کرده و دندان را برای جلوگیری از عفونت بیشتر ترمیم می‌کند.
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-10">
+              اورژانس دندانپزشکی
+            </h3>
+            <p className="py-2 text-center text-sm text-black font-bold">
+              درمان ریشه برای دندان‌های آسیب دیده یا عفونی ضروری است.
             </p>
           </div>
         </div>
       </section>
+
+
 
 
       <section>
@@ -165,7 +183,7 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-gray-800">درباره دکتر گلشاه</h2>
             <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
             <div className="w-12 h-1 bg-gray-400 my-8 px-8" />
-            <p className="text-gray-600 text-center px-8 md:text-right">
+            <p className="md:text-xl font-bold text-black text-center px-8 md:text-right">
               شعار من در کارم اولیت درمان بر زیبایی و انتخاب بهترین گزینه درمانی مناسب
               برای هر فرد است. و سپس اقدام به درمان زیبایی اصولی هستم. من با گذراندن
               دوره های مختلف زیبایی، ایمپلنت، لیزر و غیره سعی بر آن داشتم تا انتهای
@@ -183,7 +201,7 @@ export default function Page() {
             />
           </div>
         </div>
-        <section className="text-center justify-center px-4 py-12">
+        <section className="text-center justify-center px-10 sm:px-28 md:px-16 lg:px-96 py-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-8">
             نمونه کار
           </h2>
@@ -212,8 +230,8 @@ export default function Page() {
             </div>
 
             {/* گالری عکس‌ها */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 -mt-4 sm:-mt-12 md:-mt-12 lg:-mt-40 px-4 sm:px-8">
-              {[...Array(12)].map((_, index) => (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 -mt-4 sm:-mt-12 md:-mt-12 lg:-mt-40 px-4 sm:px-8">
+              {[...Array(9)].map((_, index) => (
                 <div key={index} className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <img
                     className="h-48 sm:h-56 md:h-64 w-full object-cover transform hover:scale-105 transition-transform duration-300"
@@ -240,7 +258,7 @@ export default function Page() {
             </div>
 
             {/* ویدیو */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2  px-10 sm:px-28 md:px-16 lg:px-72">
               <div className="e-hosted-video elementor-wrapper elementor-open-inline">
                 <video
                   className="elementor-video w-full h-auto max-w-xl mx-auto"
@@ -270,7 +288,7 @@ export default function Page() {
           {/* بخش دوم: ویدیو سمت چپ، متن سمت راست */}
           <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
             {/* ویدیو */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 px-10 sm:px-28 md:px-16 lg:px-48">
               <div className="e-hosted-video elementor-wrapper elementor-open-inline">
                 <video
                   className="elementor-video w-full h-auto max-w-xl mx-auto"
@@ -348,7 +366,7 @@ export default function Page() {
         </div>
         {/* End Section Title */}
         <div className="container mx-auto px-4 items-center justify-center flex ">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-48">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12  sm:gap-6 md:gap-16 lg:gap-48">
             {/* Post 1 */}
             <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
               <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
