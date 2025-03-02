@@ -64,10 +64,10 @@ export default function Page() {
 
 
       <section className="px-20 sm:px-32 md:px-16 lg:px-96">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 md:p-12 lg:p-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 md:p-12 lg:p-16 ">
           {/* خدمات لمینت */}
-          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
-            <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex bg-white  flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+            <span className="absolute -top-12 p-4 border-3  border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-47.png"
                 alt="خدمات لمینت"
@@ -84,7 +84,7 @@ export default function Page() {
           </div>
 
           {/* ایمپلنت دندانی */}
-          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 bg-white border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-48.png"
@@ -101,7 +101,7 @@ export default function Page() {
           </div>
 
           {/* درمان ریشه */}
-          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 bg-white border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-46.png"
@@ -122,7 +122,7 @@ export default function Page() {
       <section className="px-20 sm:px-28 md:px-16 lg:px-96">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 md:p-12 lg:pt-1">
           {/* خدمات لمینت */}
-          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 bg-white border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-51.png"
@@ -139,7 +139,7 @@ export default function Page() {
           </div>
 
           {/* ایمپلنت دندانی */}
-          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 bg-white border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-66-1.png"
@@ -156,7 +156,7 @@ export default function Page() {
           </div>
 
           {/* درمان ریشه */}
-          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
+          <div className="relative px-5 mt-6 pt-8 pb-6 flex flex-col justify-start items-center border-3 bg-white border-gray-400 rounded-xl text-gray-300 w-full h-64 transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-blue-600">
             <span className="absolute -top-12 p-4 border-3 border-gray-300 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
               <img
                 src="https://noorbakhshdds.com/wp-content/uploads/2022/12/Group-49.png"
