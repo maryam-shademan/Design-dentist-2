@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import localFont from 'next/font/local'
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+ 
+// Font files can be colocated inside of `app`
+const myFont = localFont({
+  src: '../../public/fonts/lazlo.woff2',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "دنتیس کلینک",
@@ -23,7 +20,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-lazlo>`}>
+      <body className={`${myFont.className} antialiased font-lazlo>`}>
         {/* هدر */}
         <header className="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-4 px-8 shadow-lg">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center">

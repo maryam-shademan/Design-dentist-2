@@ -244,21 +244,20 @@ export default function Page() {
           </div>
         </section>
         {/*ویذیو*/}
-        <section className="mt-8 bg-gray-300 px-4 md:px-20">
+        <section className="mt-8 bg-gray-300 px-2 md:px-20">
           {/* بخش اول: ویدیو سمت راست، متن سمت چپ */}
           <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
             {/* متن */}
-            <div className="w-full md:w-1/2 text-right">
-              <h2 className="text-4xl font-bold mb-4 text-black">
+            <div className="w-full md:w-1/2 lg:w-1/2 text-right md:ml-44 px-4 md:px-0">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">
                 انتخاب من بین ونیر کامپوزیت و لمینت سرامیکی
               </h2>
-              <div className="text-lg text-black">
+              <div className="text-base sm:text-lg text-black">
                 در مقایسه بین بهترین روش های طراحی لبخند
               </div>
             </div>
-
             {/* ویدیو */}
-            <div className="w-full md:w-1/2  px-10 sm:px-28 md:px-16 lg:px-72">
+            <div className="w-full md:w-1/2  px-6 sm:px-28 md:px-16 lg:px-72">
               <div className="e-hosted-video elementor-wrapper elementor-open-inline">
                 <video
                   className="elementor-video w-full h-auto max-w-xl mx-auto"
@@ -313,11 +312,11 @@ export default function Page() {
             </div>
 
             {/* متن */}
-            <div className="w-full md:w-1/2 text-right">
-              <h2 className="text-4xl font-bold mb-4 text-black">
+            <div className="w-full md:w-1/2 text-left px-4 md:px-0">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">
                 انتخاب من بین ونیر کامپوزیت و لمینت سرامیکی
               </h2>
-              <div className="text-lg text-black">
+              <div className="text-base sm:text-lg text-black">
                 در مقایسه بین بهترین روش های طراحی لبخند
               </div>
             </div>
